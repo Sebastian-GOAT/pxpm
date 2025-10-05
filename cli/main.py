@@ -15,14 +15,16 @@ def main():
         return
     
     command = argv[1]
-    names = [arg for arg in argv if not arg.startswith('--')]
-    flags = [arg for arg in argv if arg.startswith('--')]
+    rest = argv[2:]
+    names = [arg for arg in rest if not arg.startswith('--')]
+    flags = [arg for arg in rest if arg.startswith('--')]
 
     if command == 'init':
         init()
         return
 
     if command == 'install' or command == 'i':
+        install(names, flags)
         return
     
     if command == 'uninstall' or command == 'uni':
