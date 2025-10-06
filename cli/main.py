@@ -16,8 +16,8 @@ def main():
     
     command = argv[1]
     rest = argv[2:]
-    names = [arg for arg in rest if not arg.startswith('--')]
-    flags = [arg for arg in rest if arg.startswith('--')]
+    names = [arg for arg in rest if not (arg.startswith('--') or arg.startswith('-'))]
+    flags = [arg for arg in rest if arg.startswith('--') or arg.startswith('-')]
 
     if command == 'init':
         init()
@@ -28,6 +28,7 @@ def main():
         return
     
     if command == 'uninstall' or command == 'uni':
+        uninstall(names, flags)
         return
 
     if command == 'config':
