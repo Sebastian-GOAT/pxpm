@@ -1,4 +1,4 @@
-from lib.getconfig import get_config
+from commands.lib.getconfig import get_config
 from pathlib import Path
 import shutil
 import json

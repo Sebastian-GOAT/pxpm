@@ -5,7 +5,6 @@ from commands.install import install
 from commands.uninstall import uninstall
 from commands.config import config
 from commands.list import show_list
-from commands.exists import exists
 from commands.update import update
 
 def main():
@@ -36,10 +35,6 @@ def main():
     
     # Lists specified packages (* for all)
     if command == 'list':
-        return
-    
-    # Checks if specified packages are installed (* for all)
-    if command == 'exists':
         return
     
     # Updates specified packages (* for all)

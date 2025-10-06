@@ -1,4 +1,5 @@
 from pathlib import Path
+import json
 from commands.lib.getconfig import get_config
 
 # REMOVE, THIS IS JUST FOR TESTING
@@ -45,5 +46,12 @@ def install(names: list[str], flags: list[str]):
             (package_path / '__init__.py').write_text(pkg_obj['code'])
 
             print(f'Added package \'{name}\' to modules/')
+
+    try:
+        with open('moduleconfig.json', 'w') as f:
+            json.dump(config, f, indent=4)
+        print('moduleconfig.json updated.')
+    except:
+        print(f'Failed to write updated moduleconfig.json')
 
     print('All modules installed and are in sync with moduleconfig.json')

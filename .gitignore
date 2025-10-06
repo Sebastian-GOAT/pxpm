@@ -1,1 +1,8 @@
+# Local
+
 __pycache__/
+node_modules/
+
+# Test
+
+moduleconfig.json
