@@ -31,14 +31,17 @@ def main():
         return
 
     if command == 'config':
+        config()
         return
     
     # Lists specified packages (* for all)
     if command == 'list':
+        show_list(names)
         return
     
     # Updates specified packages (* for all)
     if command == 'update':
+        update(names)
         return
 
 

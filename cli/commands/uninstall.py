@@ -5,6 +5,10 @@ import json
 
 def uninstall(names: list[str], flags: list[str]):
 
+    if not names:
+        print('Usage: "pxpm uninstall <...packages>"')
+        return
+
     names = list(set(names))
 
     # Get moduleconfig.json

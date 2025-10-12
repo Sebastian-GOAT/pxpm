@@ -7,7 +7,7 @@ def get_package(name: str) -> dict:
     """Return package data as an object"""
     return {
         'name': name,
-        'version': 'latest',  # placeholder, or whatever your source provides
+        'version': 'latest',
         'code': f'# Code for package {name}\nprint("Hello from {name}")'
     }
 
