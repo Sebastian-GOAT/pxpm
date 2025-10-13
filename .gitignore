@@ -1,13 +1,15 @@
 # Local
-
 __pycache__/
 node_modules/
+.nuxt/
+
+# Build
+dist/
+index.js
 
 # Test
-
 moduleconfig.json
 modules/
 
 # Enviroment variables
-
 .env

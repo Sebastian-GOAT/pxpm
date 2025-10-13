@@ -1,5 +1,13 @@
+type PrefixSymbol = string;
+
 export interface PackageMeta {
-  name: string;
-  version: string;
-  // Add more fields as needed
+    name: string;
+    version: `${number}.${number}.${number}`;
+    dependencies: {
+        [name: string]: `${PrefixSymbol}${number}.${number}.${number}` | 'latest';
+    };
+    github: {
+        username: string;
+        repository: string;
+    }
 }
