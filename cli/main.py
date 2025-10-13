@@ -30,6 +30,7 @@ def main():
         uninstall(names, flags)
         return
 
+    # Opens configuration file
     if command == 'config':
         config()
         return
@@ -43,8 +44,6 @@ def main():
     if command == 'update':
         update(names)
         return
-
-
 
 if __name__ == '__main__':
     main()

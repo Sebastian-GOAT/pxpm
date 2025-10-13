@@ -7,3 +7,7 @@ node_modules/
 
 moduleconfig.json
 modules/
+
+# Enviroment variables
+
+.env

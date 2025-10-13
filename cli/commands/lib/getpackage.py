@@ -1,6 +1,6 @@
 import requests
 
-def get_package(name: str):
+def get_package(name: str) -> dict | None:
 
     try:
         url = f'/api/package/{name}'
