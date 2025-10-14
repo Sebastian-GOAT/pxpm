@@ -1,6 +1,20 @@
 <template>
 
+    <!-- Inputs -->
+    <section>
+        <UInput
+            placeholder="Search..."
+        />
+        <UInputTags
+            placeholder="Keywords..."
+        />
+        <UButton></UButton>
+    </section>
 
+    <!-- Packages -->
+    <section>
+
+    </section>
 
 </template>
 
@@ -13,5 +27,7 @@ definePageMeta({
 useHead({
     title: 'Home | pxpm'
 });
+
+const keywordsRef = ref('');
 
 </script>

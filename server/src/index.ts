@@ -70,4 +70,5 @@ app.post('/publish', async (req, res) => {
 });
 
 // Listener
-app.listen(3000, () => console.log('App running on http://localhost:3000'));
+const PORT = 8080;
+app.listen(PORT, () => console.log(`App running on http://localhost:${PORT}`));
