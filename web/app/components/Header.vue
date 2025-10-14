@@ -1,5 +1,5 @@
 <template>
-    <header class="px-8 h-16 flex justify-between items-center border-b-1 border-b-white/20">
+    <header class="px-8 h-16 flex justify-between items-center border-b-1 border-b-outline">
 
         <!-- Logo -->
         <NuxtLink href="/" class="text-xl font-semibold flex items-center gap-2">
@@ -29,7 +29,8 @@
         </NuxtLink>
         <div v-else class="flex items-center gap-4">
             <UButton
-                class="text-white"
+                color="neutral"
+                size="lg"
                 href="/auth/signup"
             >
                 Sign up
@@ -37,6 +38,7 @@
             <UButton
                 variant="subtle"
                 color="neutral"
+                size="lg"
                 href="/auth/login"
             >
                 Log in

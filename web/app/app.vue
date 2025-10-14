@@ -17,14 +17,16 @@
     --bg: #F6F7F8;
     --fg: black;
 
-    --bg-card: #1C242D; /* Change to light mode */
+    --bg-card: #1C252D; /* Change to light mode */
+    --outline: #93aac5;
 }
 
 .dark {
     --bg: #101922;
     --fg: white;
 
-    --bg-card: #1C242D;
+    --bg-card: #1C252D;
+    --outline: #3a434d;
 }
 
 @theme inline {
@@ -32,6 +34,9 @@
 
     --color-bg: var(--bg);
     --color-fg: var(--fg);
+
+    --color-bg-card: var(--bg-card);
+    --color-outline: var(--outline);
 }
 
 body {

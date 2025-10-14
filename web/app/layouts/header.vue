@@ -1,6 +1,6 @@
 <template>
     <Header />
-    <main>
+    <main class="px-16">
         <slot />
     </main>
 </template>
